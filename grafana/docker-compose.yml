@@ -11,4 +11,4 @@ services:
       - 3000:3000
     user: "472"
     volumes:
-      - grafana-storage: /var/lib/grafana
+      - grafana-storage:/var/lib/grafana
