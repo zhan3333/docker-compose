@@ -6,7 +6,7 @@ volumes:
 
 services:
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:6.5.0-ubuntu
     ports:
       - 3000:3000
     user: "472"
