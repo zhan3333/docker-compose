@@ -3,6 +3,8 @@ version: "2"
 volumes:
   grafana-storage:
     driver: local
+  grafana-config:
+    driver: local
 
 services:
   grafana:
@@ -13,3 +15,4 @@ services:
     user: "472"
     volumes:
       - grafana-storage:/var/lib/grafana
+      - grafana-config:/etc/grafana
