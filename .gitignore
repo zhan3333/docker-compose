@@ -2,3 +2,5 @@ jenkinsci/jenkins-data
 jenkins/jenkins-data
 /.idea
 /.vscode
+mariadb/data
+mysql/data
