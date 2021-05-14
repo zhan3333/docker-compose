@@ -11,3 +11,8 @@ services:
       - ./data:/data:rw
     restart: always
     privileged: true
+    networks:
+      - app
+networks:
+  app:
+    external: true

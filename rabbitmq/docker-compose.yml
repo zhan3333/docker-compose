@@ -14,11 +14,9 @@ services:
       - '25672:25672'
       - '15672:15672'
     volumes:
-      - 'rabbitmq_data:/bitnami'
-volumes:
-  rabbitmq_data:
-    driver: local
+      - './data:/bitnami'
+    networks:
+      - app
 networks:
-  default:
-      external:
-        name: app
+  app:
+    external: true
